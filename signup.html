@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup for facebook</title>
+        <style>
+            h1{
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgb(54, 87, 255);
+                text-align:center;
+                font-size:450%;
+            }
+            .p1{
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 125%;
+                text-align: center;
+                margin-bottom: 0%;
+            }
+            .p2{
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 100%;
+                text-align: center;
+            }
+            label{
+                font-size:15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            input[type=text], input[type=email], input[type=date], input[type=password]{
+                width: 80%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1.5px solid black;
+                border-radius: 2px;
+                background:rgb(236, 245, 255);
+                color:rgb(0, 30, 57);
+                font-size: 1rem;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .d1{
+                display:block;
+                text-align:center;
+                border-style: groove;
+                border-width: 1px;
+                border-radius: 0%;
+                margin-left: 30%;
+                margin-right: 30%;
+                border-color: rgb(255, 255, 255);
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.075),0 17px 50px 0 rgba(0, 0, 0, 0.043);
+            }
+            input[type=submit] {
+                width: 80%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1.5px solid black;
+                border-radius: 2px;
+                background:rgb(87, 99, 255);
+                color:rgb(249, 252, 255);
+                font-size: 1rem;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            
+            input[type=submit]:hover{
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.075),0 17px 50px 0 rgba(0, 0, 0, 0.043);
+                cursor:pointer;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(36, 36, 255);
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 15px;
+            }
+            input[type=submit]:hover{
+                background: rgb(44, 79, 255);
+                box-shadow: 0 12px 16px 0 rgba(139, 139, 139, 0.24),0 17px 50px 0 rgba(134, 134, 134, 0.19);
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><b>facebook</b></h1>
+        <div class="d1">
+            <b><p class="p1">Create a new account</p></b>
+            <p class="p2">It's quick and easy.</p>
+            <hr>
+            <form action="su.php" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="fname" placeholder="First Name" size="40">
+                            <input type="text" name="sname" placeholder="Surname" size="40">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="email" placeholder="email" size="87">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label align="center">Gender</label><br>
+                            <label><input type="radio" name="gen">Male</label>
+                            <label><input type="radio" name="gen">Female</label>
+                            <label><input type="radio" name="gen">Others</label>
+                            <label><input type="radio" name="gen">Prefer Not to say</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" name="dob" size="87"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" placeholder="Password" size="87"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="signup" value="Sign Up"></td>
+                    </tr>
+                </table>
+                <hr>
+                <a href="login.html">Already have an account?</a>
+                <br><br>
+            </form>
+        </div>
+    </body>
+</html>
